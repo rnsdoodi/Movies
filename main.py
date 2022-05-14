@@ -18,7 +18,7 @@ MOVIE_DB_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY", "ANY SECRET KEY ")
 Bootstrap(app)
 all_movies = []
 
